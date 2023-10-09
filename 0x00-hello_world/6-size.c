@@ -6,7 +6,7 @@
  * Description: This function prints the sizes of various data types in bytes.
  *
  * Return: Always 0 (Success)
- */
+ /* This program prints the sizes of various data types in bytes. */
 int main(void)
 {
 char a;
@@ -17,9 +17,9 @@ float f;
 
 printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
 printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
-printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c)); /* Corrected size of long int */
+printf("%lu byte(s)\n", (unsigned long)sizeof(c)); /* Corr size of long int */
 printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(d));
-printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f)); /* Corrected size of float */
+printf("%lu byte(s)\n", (unsigned long)sizeof(f)); /* Corr size of float */
 
 return (0);
 }
