@@ -1,13 +1,32 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_triangle - prints a triangle
+ * @size: is the size of triangle
  */
-int _putchar(char c)
+
+void print_triangle(int size)
 {
-	return (write(1, &c, 1));
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		int i, j;
+
+		for (i = 0; i < size; i++)
+		{
+			for (j = 0; j < size - i - 1; j++)
+			{
+				_putchar(' ');
+			}
+			for (j = 0; j <= i; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
 }
+
