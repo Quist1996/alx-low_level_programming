@@ -1,9 +1,6 @@
-main.h
+#ifndef MAIN_H
 
-
-#ifndef main_h
-
-#define main_h
+#define MAIN_H
 
 
 
