@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -8,6 +8,19 @@
 * Return: the length of the string
 */
 int _strlen(char *s)
+{
+int i;
+
+i = 0;
+
+while (s[i] != '\0')
+{
+i++;
+}
+
+return (i);
+}
+
 /**
 * *_strcpy - copies the string pointed to by src
 * including the terminating null byte (\0)
@@ -28,7 +41,7 @@ while (src[len] != '\0')
 len++;
 }
 
-for (i = 0; i < len; i++)
+for (i = 0; i &lt; len; i++)
 {
 dest[i] = src[i];
 }
@@ -76,4 +89,4 @@ _strcpy(dog->owner, owner);
 dog->age = age;
 
 return (dog);
-}
+}}
